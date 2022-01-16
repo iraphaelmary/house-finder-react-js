@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+
+/* color palettes */
+:root {
+  --primary-color: #152a3c;
+  --secondary-color: #205b73;
+  --text: #242754;
+  --btn: #d8edf2;
+  --border: #96d2d9;
+  --btn-2: #f92809;
+  --purple: #552583;
+  --gold: #fdb927;
+  --blue: #4400b9;
+  --titan-white: #f8f7ff;
+  --black-rock: #0a032a;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--black-rock);
+  margin-top: 2px;
+  padding: .8rem 1.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--gold);
+  transition: .1s ease-in;
+  cursor: pointer;
+  /* background: linear-gradient(145deg, #242754, #fdb927); */
+}
+
+.listing .btn {
+  background-color: rgb(250, 201, 42);
+  color: var(--black-rock)
+}
+
+.btn:hover {
+  color:var(--black-rock);
+  background-color: var(--gold);
+}
+
+

@@ -1,0 +1,190 @@
+.listing {
+    width: 100%;
+    height: calc(100vh - 75px);
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 4rem;
+}
+
+.cent {
+    text-align: center;
+
+    .listing-title {
+        font-size: 3.8rem;
+        margin: 2rem 0;
+    }
+
+    .listing-text {
+        font-size: 2rem;
+        color: dimgray;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'showcase a b'
+    'showcase c d';
+    gap: 20px;
+    margin-block: 2rem;
+}
+
+.showcase {
+    grid-area: showcase;
+    height: 70vh;
+    border: 2px solid rgba(105, 105, 105, 0.199);
+    background: url('../../assets/showcase.jpg') no-repeat center center/cover;
+    background-color:#0a032ac4;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 2rem 2rem .8rem 2rem;
+            color: var(--gold);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: whitesmoke;
+            padding: 0 3rem 2rem;
+            line-height: 2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+}
+
+.top-box {
+    position: relative;
+    width: 200px;
+    height: 216px;
+    display: grid;
+    place-items: center;
+    transition: transform .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            outline: 5px solid rgba(105, 105, 105, 0.096);
+            outline-offset: 5px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 600;
+            color: rgb(244, 247, 242);
+        }
+
+        .a {
+            grid-area: a;
+        }
+        
+        .b {
+            grid-area: b;
+        }
+        
+        .c {
+            grid-area: c;
+        }
+        
+        .d {
+            grid-area: d;
+        }
+}
+
+.top-box.a {
+    background: url('../../assets/houseone.jpg') no-repeat center center/cover;
+    background-color:#0a032a70;
+    background-blend-mode: darken;
+}
+
+.top-box.b {
+    background: url('../../assets/housetwo.jpg') no-repeat center center/cover;
+    background-color: #fdb927b0;
+    background-blend-mode: darken;
+}
+
+.top-box.c {
+    background-color: green;
+    background: url('../../assets/housethree.jpg') no-repeat center center/cover;
+    background-color: #fdb927b0;
+    background-blend-mode: darken;
+}
+
+.top-box.d {
+    background: url('../../assets/housefour.jpg') no-repeat center center/cover;
+    background-color:#0a032a70;
+    background-blend-mode: darken;
+}
+
+
+
+img {
+    width: 100%;
+    object-fit: center;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 940px){
+    .listing {
+        width: 100%;
+        height: 100vh;
+        margin-top: 30rem;
+
+        .center {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+
+    .cent {
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+
+            .listing-title {
+                font-size: 3rem;
+            }
+    }
+
+    .grid {
+        width: 100%;
+        grid-template-areas: 
+        'showcase showcase '
+        'a b'
+        'c d';
+        gap: 5px;
+    }
+
+    .showcase {
+        transform: scale(.95);
+    }
+
+    .showcase h1 {
+      margin: 1rem 0;
+    }
+
+    .top-box {
+        transform: scale(.9);
+        width: 100%;
+        height: 100%;
+        padding: 3.5rem 0;
+
+            .price {
+                margin-bottom: 1rem;
+            }
+    }
+
+    .top-box:hover {
+        transform: scale(.8);
+        outline: 5px solid rgba(105, 105, 105, 0.329);
+        outline-offset: 10px;
+    }
+
+}

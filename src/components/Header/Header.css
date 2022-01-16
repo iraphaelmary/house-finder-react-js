@@ -1,0 +1,132 @@
+header {
+  width: 100%;
+  height: calc(100vh - 75px);
+  position: relative;
+  background-color: #fff;
+}
+
+header section {
+  width: 800px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.header-text {
+  font-size: 1rem;
+  margin: 2rem 0;
+  line-height: 1.9rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: dimgray;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  padding: 1rem;
+}
+
+input[type='search'] {
+  width: 375px;
+  border: transparent;
+  -webkit-box-shadow: 0px 0px 4px var(--gold);
+          box-shadow: 0px 0px 4px var(--gold);
+}
+
+input[type='search']:focus {
+  outline: none;
+}
+
+label {
+  padding: 0 5px;
+  font-size: 1.2rem;
+}
+
+.radio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .9rem .5rem;
+}
+
+button {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+}
+
+button .icon {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .center {
+    padding: 0 1rem;
+  }
+  header section {
+    width: 100%;
+  }
+  .search-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .header-text {
+    width: 330px;
+  }
+  .header-title {
+    font-size: 2.4rem;
+  }
+  input[type='search'] {
+    width: 100%;
+  }
+  label {
+    font-weight: 600;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

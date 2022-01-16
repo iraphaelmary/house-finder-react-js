@@ -1,0 +1,128 @@
+nav {
+  width: 100%;
+  height: 75px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: var(--titan-white);
+  -webkit-box-shadow: 3px 5px 10px #0a032a3d;
+          box-shadow: 3px 5px 10px #0a032a3d;
+}
+
+nav .center {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 8rem;
+  background-color: var(--titan-white);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links .link {
+  padding: 0 0 0 2rem;
+  font-size: 1.1rem;
+}
+
+.links .link a {
+  color: var(--secondary-color);
+}
+
+.links .link a:hover {
+  color: var(--gold);
+}
+
+.nav-sign-up {
+  display: none;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: #0a032a;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+nav span {
+  color: var(--gold);
+  padding-right: 3px;
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    width: 100%;
+  }
+  nav .center {
+    width: 100%;
+    padding: .8rem;
+  }
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0a032a;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 100;
+  }
+  .link {
+    margin: 1rem 1.7rem 1rem 0;
+  }
+  .link a {
+    font-size: 1.7rem;
+  }
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav section > a {
+    display: none;
+  }
+  nav section .links .link a {
+    display: block;
+  }
+  .active {
+    right: 0;
+  }
+  .nav-sign-up {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

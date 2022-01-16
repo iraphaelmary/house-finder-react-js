@@ -1,0 +1,202 @@
+.listing {
+  width: 100%;
+  height: calc(100vh - 75px);
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 4rem;
+}
+
+.cent {
+  text-align: center;
+}
+
+.cent .listing-title {
+  font-size: 3.8rem;
+  margin: 2rem 0;
+}
+
+.cent .listing-text {
+  font-size: 2rem;
+  color: dimgray;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'showcase a b' 'showcase c d';
+  gap: 20px;
+  margin-block: 2rem;
+}
+
+.showcase {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: showcase;
+  height: 70vh;
+  border: 2px solid rgba(105, 105, 105, 0.199);
+  background: url("../../assets/showcase.jpg") no-repeat center center/cover;
+  background-color: #0a032ac4;
+  background-blend-mode: overlay;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  margin: 2rem 2rem .8rem 2rem;
+  color: var(--gold);
+}
+
+.showcase p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  padding: 0 3rem 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.top-box {
+  position: relative;
+  width: 200px;
+  height: 216px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.top-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  outline: 5px solid rgba(105, 105, 105, 0.096);
+  outline-offset: 5px;
+}
+
+.top-box .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f4f7f2;
+}
+
+.top-box .a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: a;
+}
+
+.top-box .b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+}
+
+.top-box .c {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: c;
+}
+
+.top-box .d {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d;
+}
+
+.top-box.a {
+  background: url("../../assets/houseone.jpg") no-repeat center center/cover;
+  background-color: #0a032a70;
+  background-blend-mode: darken;
+}
+
+.top-box.b {
+  background: url("../../assets/housetwo.jpg") no-repeat center center/cover;
+  background-color: #fdb927b0;
+  background-blend-mode: darken;
+}
+
+.top-box.c {
+  background-color: green;
+  background: url("../../assets/housethree.jpg") no-repeat center center/cover;
+  background-color: #fdb927b0;
+  background-blend-mode: darken;
+}
+
+.top-box.d {
+  background: url("../../assets/housefour.jpg") no-repeat center center/cover;
+  background-color: #0a032a70;
+  background-blend-mode: darken;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 940px) {
+  .listing {
+    width: 100%;
+    height: 100vh;
+    margin-top: 30rem;
+  }
+  .listing .center {
+    width: 100%;
+    padding: 0;
+  }
+  .cent {
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .cent .listing-title {
+    font-size: 3rem;
+  }
+  .grid {
+    width: 100%;
+        grid-template-areas: 'showcase showcase ' 'a b' 'c d';
+    gap: 5px;
+  }
+  .showcase {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .showcase h1 {
+    margin: 1rem 0;
+  }
+  .top-box {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 0;
+  }
+  .top-box .price {
+    margin-bottom: 1rem;
+  }
+  .top-box:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    outline: 5px solid rgba(105, 105, 105, 0.329);
+    outline-offset: 10px;
+  }
+}
+/*# sourceMappingURL=Listing.css.map */
